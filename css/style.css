@@ -1,0 +1,292 @@
+@import "https://fonts.googleapis.com/css?family=Space+Mono:400,700";
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap");
+
+html {
+  cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAMAAACeyVWkAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAEZJREFUeAGt0EEKgDAUA1En9z+0qEENhA+FvlUZQqE9Bnynlmlr2iVkSY66AHrg+MddSUiU6VuxqMhYquzcCvO6PZjhx5oTQ+8Bs3EshqIAAAAASUVORK5CYII=),
+    auto;
+}
+
+/* Footer */
+footer {
+  background-color: #f4c648;
+  padding-top: 2em;
+}
+
+.foot:hover {
+  text-decoration: underline;
+}
+
+/* Typography */
+
+.inner-page h1 {
+  font-weight: 700;
+}
+
+.inner-page h2 {
+  font-weight: 700;
+  margin-top: 0.5em;
+}
+
+hr {
+  margin-top: 2em;
+}
+
+.inner-page p {
+  font-size: 20px;
+}
+
+.inner-page h3 {
+  color: #2d37d5;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+p {
+  color: #292828;
+  font-family: "Kumbh Sans", sans-serif;
+  letter-spacing: 0.03em;
+}
+
+h1,
+.h1 {
+  font-size: 50px;
+  line-height: 60px;
+}
+
+h2,
+.h2 {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 300;
+}
+
+h3,
+.h3 {
+  font-size: 24px;
+  line-height: 34px;
+}
+
+h4,
+.h4 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+h5,
+.h5 {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+h6,
+.h6 {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+p {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.nav {
+  display: block;
+}
+
+a {
+  color: #f4c648;
+  font-family: "Kumbh Sans", sans-serif;
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+a:hover {
+  font-family: "Kumbh Sans", sans-serif;
+  text-decoration: underline;
+  outline: none;
+}
+
+.nav-link {
+  font-family: "Kumbh Sans", sans-serif;
+  color: #000;
+}
+
+.nav-link:hover {
+  font-family: "Kumbh Sans", sans-serif;
+  text-decoration: underline;
+}
+.main-nav .header-top-socials a {
+  letter-spacing: 1px;
+  font-size: 14px;
+  padding: 20px 6px;
+}
+
+.navbar-nav .nav-link {
+  padding: 20px 15px !important;
+  font-size: 20px;
+}
+
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:focus,
+.navbar-nav > .active > a:hover {
+  color: #f4c648;
+}
+
+/* horizontal */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+}
+
+body :not(input):not(textarea) {
+  touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* .h-scroll {
+  overflow-x: scroll;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+} */
+
+.hs {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 400px;
+  margin: 1rem 1.5rem 1rem 0;
+  -webkit-box-flex: 0;
+  flex: 0 0 500px;
+}
+.hs-project {
+  position: relative;
+  overflow: hidden;
+  max-width: 600px;
+  margin: 1rem 1.5rem 1rem 0;
+  -webkit-box-flex: 0;
+  flex: 0 0 500px;
+}
+@media (min-width: 600px) {
+  .hs {
+    /*max-width: 500px;*/
+  }
+}
+.hs__img {
+  height: auto;
+  max-width: 500px;
+  overflow: hidden;
+}
+@media (min-width: 600px) {
+  .hs__img {
+    height: auto;
+  }
+}
+
+.fit-cover {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+/* Sidebar */
+
+#sidebar {
+  top: 100px;
+  position: -webkit-sticky;
+  position: sticky;
+  font-size: 16px;
+}
+
+.icon-bar {
+  background-color: black;
+}
+
+.affix-top,
+.affix {
+  position: fixed;
+}
+
+@media (min-width: 979px) {
+  #sidebar.affix-top {
+    position: static;
+    margin-top: 30px;
+    width: 228px;
+  }
+
+  #sidebar.affix {
+    position: fixed;
+    top: 70px;
+    width: 228px;
+  }
+}
+
+/* zoom */
+
+.zoom {
+  transition: transform 0.2s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(
+    1.2
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.shrink {
+  transition: transform 0.2s; /* Animation */
+}
+
+.shrink:hover {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+/* Highlight */
+
+.highlight {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  background: #f4c648;
+}
