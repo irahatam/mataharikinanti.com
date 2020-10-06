@@ -5,7 +5,7 @@ let contentGridElement = document.getElementById("contentGrid");
 let jsonDatabase = [
   {
     img: "img/dl/w1.png",
-    title: "<br>Money Spending Tracker App",
+    title: "<br>Expense Tracker App",
   },
 ];
 
