@@ -4,12 +4,58 @@
 html {
   cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAMAAACeyVWkAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAEZJREFUeAGt0EEKgDAUA1En9z+0qEENhA+FvlUZQqE9Bnynlmlr2iVkSY66AHrg+MddSUiU6VuxqMhYquzcCvO6PZjhx5oTQ+8Bs3EshqIAAAAASUVORK5CYII=),
     auto;
+  scroll-behavior: smooth;
 }
+
+/* Navbar */
+.nav {
+  display: block;
+}
+
+a {
+  color: #f4c648;
+  font-family: "Kumbh Sans", sans-serif;
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  outline: none;
+}
+
+.nav-link {
+  font-family: "Kumbh Sans", sans-serif;
+  color: #000;
+}
+
+.nav-link:hover {
+  font-family: "Kumbh Sans", sans-serif;
+  text-decoration: underline;
+}
+.main-nav .header-top-socials a {
+  letter-spacing: 1px;
+  font-size: 14px;
+  padding: 20px 6px;
+}
+
+.navbar-nav .nav-link {
+  padding: 20px 15px !important;
+  font-size: 20px;
+}
+
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:focus,
+.navbar-nav > .active > a:hover {
+  color: #f4c648;
+}
+
 
 /* Footer */
 footer {
   background-color: #f4c648;
   padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 .foot:hover {
@@ -98,48 +144,6 @@ p {
   font-family: "Kumbh Sans", sans-serif;
 }
 
-.nav {
-  display: block;
-}
-
-a {
-  color: #f4c648;
-  font-family: "Kumbh Sans", sans-serif;
-  transition: all 0.25s ease;
-  text-decoration: none;
-}
-
-a:hover {
-  font-family: "Kumbh Sans", sans-serif;
-  text-decoration: underline;
-  outline: none;
-}
-
-.nav-link {
-  font-family: "Kumbh Sans", sans-serif;
-  color: #000;
-}
-
-.nav-link:hover {
-  font-family: "Kumbh Sans", sans-serif;
-  text-decoration: underline;
-}
-.main-nav .header-top-socials a {
-  letter-spacing: 1px;
-  font-size: 14px;
-  padding: 20px 6px;
-}
-
-.navbar-nav .nav-link {
-  padding: 20px 15px !important;
-  font-size: 20px;
-}
-
-.navbar-nav > .active > a,
-.navbar-nav > .active > a:focus,
-.navbar-nav > .active > a:hover {
-  color: #f4c648;
-}
 
 /* horizontal */
 
@@ -180,16 +184,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-/* .h-scroll {
-  overflow-x: scroll;
-  display: -webkit-box;
-  display: flex;
-  flex-wrap: nowrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  flex-direction: row;
-} */
 
 .hs {
   position: relative;
